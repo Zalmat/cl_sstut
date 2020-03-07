@@ -7,7 +7,7 @@ namespace cl_sstut
     /// <summary>
     /// Заносим в память ShopToken и ServiceCode
     /// Пример:  SignatureGeneration sg = new SignatureGeneration("ShopToken", "ServiceCode");
-    ///Соответственно вывод: Console.WriteLine(sg.GetSign(proverka));
+    /// Соответственно вывод: Console.WriteLine(sg.GetSign(proverka));
     /// </summary>
     public class SignatureGeneration
     {
