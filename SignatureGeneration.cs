@@ -6,6 +6,8 @@ namespace cl_sstut
 {
     /// <summary>
     /// Заносим в память ShopToken и ServiceCode
+    /// Пример:  SignatureGeneration sg = new SignatureGeneration("ShopToken", "ServiceCode");
+    ///Соответственно вывод: Console.WriteLine(sg.GetSign(proverka));
     /// </summary>
     public class SignatureGeneration
     {
@@ -17,7 +19,7 @@ namespace cl_sstut
             ShopToken = token;
         }
         /// <summary>
-        /// Заносим все значения кроме шопа и сервиса для формирования подписи
+        /// Для итогового формирования подписи.
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
@@ -34,11 +36,6 @@ namespace cl_sstut
            string result = ServiceCode + rezult + ShopToken;
 
             return HashText.CkassaMD5(result);
-        }
-        public string dddd(string token, string serviceCode)
-        {
-            string aaaa = token;
-            return aaaa;
         }
     }
     

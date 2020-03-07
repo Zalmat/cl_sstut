@@ -18,7 +18,7 @@ namespace cl_sstut
             //Console.WriteLine(HashText.CkassaMD5(SignatureGeneration.WalletRide.RegisrtationMerchant(phone: userToken, shopToken: servisCode)));
             
             string[] proverka = new string[] {"8i87i8", "fgdfgd", "dfdfd", "fgdfgd"};
-            SignatureGeneration sg = new SignatureGeneration("ffff", "dddd");
+            SignatureGeneration sg = new SignatureGeneration("ShopToken", "ServiceCode");
             Console.WriteLine( sg.GetSign(proverka));
            
         } 
