@@ -1,13 +1,13 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace cl_sstut
 {
     /// <summary>
-    /// Заносим в память ShopToken и ServiceCode
-    /// Пример:  SignatureGeneration sg = new SignatureGeneration("ShopToken", "ServiceCode");
-    /// Соответственно вывод: Console.WriteLine(sg.GetSign(proverka));
+    /// Р—Р°РЅРѕСЃРёРј РІ РїР°РјСЏС‚СЊ ShopToken Рё ServiceCode
+    /// РџСЂРёРјРµСЂ:  SignatureGeneration sg = new SignatureGeneration("ShopToken", "ServiceCode");
+    /// РЎРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ РІС‹РІРѕРґ: Console.WriteLine(sg.GetSign(proverka));
     /// </summary>
     public class SignatureGeneration
     {
@@ -19,7 +19,7 @@ namespace cl_sstut
             ShopToken = token;
         }
         /// <summary>
-        /// Для итогового формирования подписи.
+        /// Р”Р»СЏ РёС‚РѕРіРѕРІРѕРіРѕ С„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ РїРѕРґРїРёСЃРё.
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
