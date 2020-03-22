@@ -28,7 +28,7 @@ namespace cl_sstut
             string rezult = "";
             string pullShopTiken = "";
             string pullShopSecKey = "";
-            string pullShopAndTik = "";
+            //string pullShopAndTik = "";
 
             for (int i = 0; i < data.Length; i++)
             {
@@ -44,9 +44,9 @@ namespace cl_sstut
             
             if (!string.IsNullOrEmpty(ShopToken)) pullShopTiken = "&" + ShopToken;
             if (!string.IsNullOrEmpty(ShopSecKey)) pullShopSecKey = "&" + ShopSecKey;
-            if (!string.IsNullOrEmpty(ShopSecKey) && !string.IsNullOrEmpty(ShopToken)) pullShopAndTik = "&";
-            string result = rezult + pullShopTiken + pullShopAndTik + pullShopSecKey;
-
+            //if (!string.IsNullOrEmpty(ShopSecKey) && !string.IsNullOrEmpty(ShopToken)) pullShopAndTik = "&";
+            //string result = rezult + pullShopTiken + pullShopAndTik + pullShopSecKey; что я курил?
+            string result = rezult + pullShopTiken + pullShopSecKey;
             return HashText.CkassaMD5(result);
         }
     }
